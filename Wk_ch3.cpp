@@ -2,9 +2,13 @@
 
 #include "Wk_ch3.hpp"
 
-/* Wk_ch3Class::Wk_ch3Class{
-
-
+template <class elemType>
+bool arrayListType<elemType>::isEmpty() const{
+	return (length == 0);
 }
 
-*/
+bool arrayListType<elemType>::isFull() const{
+	return (length == maxSize);
+}
+
+int arrayListType<elemType>::
